@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "edr_activity"
+require "edr_activity/cli/core"
+
+EDRActivity::Framework.configure do |config|
+  home = Pathname.new(Dir.home)
+  config.logger = Logger.new(home.join("mdr-activity.log"))
+end
+
+EDRActivity::CLI::Core.start

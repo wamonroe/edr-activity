@@ -1,0 +1,8 @@
+require_relative "framework/base"
+require_relative "framework/configuration"
+require_relative "framework/errors"
+require_relative "framework/file"
+require_relative "framework/network_result"
+require_relative "framework/network"
+require_relative "framework/process_result"
+require_relative "framework/process"

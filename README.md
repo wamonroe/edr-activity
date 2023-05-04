@@ -1,5 +1,7 @@
 # EDRActivity::Framework
 
+[![Test](https://github.com/wamonroe/edr-activity/actions/workflows/test.yml/badge.svg)](https://github.com/wamonroe/edr-activity/actions/workflows/test.yml)
+
 > **NOTE**: This is gem was created as part of a coding exercise and is not
 > meant to be used outside of the excerise it was created for. This gem has not
 > been published to RubyGems.

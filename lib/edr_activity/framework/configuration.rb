@@ -22,7 +22,7 @@ module EDRActivity
       attr_reader :logger
 
       def initialize
-        self.logger = ::Logger.new("logs/mdr-activity.log")
+        self.logger = ::Logger.new("logs/edr-activity.log")
       end
 
       def logger=(new_logger)

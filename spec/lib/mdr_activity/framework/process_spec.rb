@@ -26,7 +26,7 @@ RSpec.describe EDRActivity::Framework::Process do
 
     it "is expected to launch the specified process with arguments" do
       expect(results).to be_success
-      expect(results.stdout).to include("mdr-activity")
+      expect(results.stdout).to include("edr-activity")
     end
 
     it "is expected to log activity" do

@@ -1,8 +1,8 @@
-# EDRActivity::Framework
+# EDRActivity
 
 [![Test](https://github.com/wamonroe/edr-activity/actions/workflows/test.yml/badge.svg)](https://github.com/wamonroe/edr-activity/actions/workflows/test.yml)
 
-> **NOTE**: This is gem was created as part of a coding exercise and is not
+> **Note**: This is gem was created as part of a coding exercise and is not
 > meant to be used outside of the excerise it was created for. This gem has not
 > been published to RubyGems.
 
@@ -20,16 +20,12 @@ This gem consitutes a framework and a simple CLI implementation.
 
 ## Table of Contents
 
-- [Tag Options](#tag-options)
+- [EDRActivity](#edractivity)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
-  - [General Usage](#general-usage)
-    - [combine!](#combine)
-    - [set!](#set)
-    - [default!](#default)
-    - [remove!](#remove)
-  - [Conditional Usage](#conditional-usage)
-  - [Custom Property Resolvers](#custom-property-resolvers)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+  - [CLI Usage](#cli-usage)
   - [Development](#development)
   - [Contributing](#contributing)
   - [License](#license)
@@ -113,7 +109,9 @@ Generate UDP network activity
 EDRActivity::Framework::Network.call(protocol: :udp, host: "dns.example.com", port: 53, message: "hello")
 ```
 
-## Example CLI Usage
+## CLI Usage
+
+> **Note**: The example CLI included with this gem logs to a file named `edr-activity.log` in your home directory.
 
 ### Process Activity
 

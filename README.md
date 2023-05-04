@@ -49,7 +49,7 @@ bundle install
 ## Configuration
 
 This framework logs the activities it generates by default to a
-`logs/mdr-activity.log`. To customize this behavior, create a `Logger` pointing
+`logs/edr-activity.log`. To customize this behavior, create a `Logger` pointing
 to the output location desired:
 
 ```ruby
@@ -118,13 +118,13 @@ EDRActivity::Framework::Network.call(protocol: :udp, host: "dns.example.com", po
 Start a process
 
 ```shell
-mdr-activity process start ls
+edr-activity process start ls
 ```
 
 Start a process, passing parameters
 
 ```shell
-mdr-activity process start ls -la ..
+edr-activity process start ls -la ..
 ```
 
 ### File Activity
@@ -132,19 +132,19 @@ mdr-activity process start ls -la ..
 Create a file with content
 
 ```shell
-mdr-activity file create example.txt --content=hello
+edr-activity file create example.txt --content=hello
 ```
 
 Update a file with content
 
 ```shell
-mdr-activity file update example.txt --content="hello again"
+edr-activity file update example.txt --content="hello again"
 ```
 
 Delete a file
 
 ```shell
-mdr-activity file delete example.txt
+edr-activity file delete example.txt
 ```
 
 ### Network Activity
@@ -152,13 +152,13 @@ mdr-activity file delete example.txt
 Generate TCP network activity
 
 ```shell
-mdr-activity network tcp example.com 80 --message=hello
+edr-activity network tcp example.com 80 --message=hello
 ```
 
 Generate UDP network activity
 
 ```shell
-mdr-activity network udp dns.example.com 53 --message=hello
+edr-activity network udp dns.example.com 53 --message=hello
 ```
 
 ## Development

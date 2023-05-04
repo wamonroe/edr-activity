@@ -1,4 +1,4 @@
-RSpec.describe MDRActivity::Framework::Process do
+RSpec.describe EDRActivity::Framework::Process do
   let(:process) { "ls" }
 
   context "without args" do
@@ -12,7 +12,7 @@ RSpec.describe MDRActivity::Framework::Process do
     end
 
     it "is expected to log activity" do
-      expect(MDRActivity::Framework.logger).to receive(:info)
+      expect(EDRActivity::Framework.logger).to receive(:info)
       results
     end
   end
@@ -30,7 +30,7 @@ RSpec.describe MDRActivity::Framework::Process do
     end
 
     it "is expected to log activity" do
-      expect(MDRActivity::Framework.logger).to receive(:info)
+      expect(EDRActivity::Framework.logger).to receive(:info)
       results
     end
   end

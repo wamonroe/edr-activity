@@ -39,7 +39,7 @@ This gem consitutes a framework and a simple CLI implementation.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "edr_activity"
+gem "edr-activity"
 ```
 
 And then execute:
@@ -173,7 +173,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run
 
 To build this gem on your local machine, run `bundle exec rake build`. To
 install the gem locally, run `gem install --local
-pkg/edr_activity-<version>.gem`.To release a new version, update the version
+pkg/edr-activity-<version>.gem`.To release a new version, update the version
 number in `version.rb`, and then run `bundle exec rake release`, which will
 create a git tag for the version, push git commits and the created tag, and push
 the `.gem` file to [rubygems.org](https://rubygems.org).

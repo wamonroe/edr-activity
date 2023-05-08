@@ -31,7 +31,14 @@ RSpec.describe EDRActivity::Framework::Network do
     ex.run
   ensure
     @server&.close
-    Process.kill(:TERM, @pid) if @pid
+    @server&.close
+    if @pid
+      begin
+        Process.kill(:KILL, @pid)
+      rescue Errno::ESRCH
+        false
+      end
+    end
   end
 
   it "sends the message to the destination host and returns the response" do
